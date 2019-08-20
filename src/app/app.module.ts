@@ -11,18 +11,24 @@ import { VirtualComponent } from './virtual/virtual.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { DragComponent } from './drag/drag.component';
+import { PaisesComponent } from './paises/paises.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     VirtualComponent,
-    DragComponent
+    DragComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
     ScrollingModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
